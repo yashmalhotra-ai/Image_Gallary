@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(219, 216, 216);
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container{
+    height: 100%;
+    max-width: 1200px;
+    margin:0 auto; /* The container is placed in center */
+    padding: 20px;  /*  content and border space */
+    /* border: 2px solid black; */
+}
+
+.container h1{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+}
+
+.gallary{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+figcaption:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+.card{
+    /* width: 100%; */
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    /* background-size: cover; */
+    width:  250px;
+    height: 200px;
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+img:hover{
+    filter: drop-shadow(0 0 10px black);
+    transform: scale(1.03);
+    transition: ease-in;
+    box-shadow: 0 0 20px black;
+    transition: 0.5s;
+    
+}
+
+
+
+
